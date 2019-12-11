@@ -27,7 +27,7 @@ def decide_queue_url(args, sqs):
         return sqs.get_queue_url(QueueName=args.queue)['QueueUrl']
 
     if not args.queue_url:
-        raise Exception("Provide either queue or queue-name.")
+        raise Exception("Provide either queue or queue-url.")
 
     return args.queue_url
 
