@@ -18,4 +18,5 @@ pre-commit install
 Releasing
 ---------
 
-Done on [.github/workflows/publish.yml](.github/workflows/publish.yml).
+Done on [.github/workflows/publish.yml](.github/workflows/publish.yml). Don't
+forget to bump the version on [setup.cfg](setup.cfg).

@@ -1,8 +1,7 @@
 awscli-sqsall
 =============
 
-awscli plugin to treat SQS queues more like files, with `receive-all-messages` and
-`send-all-messages`.
+awscli plugin to treat SQS queues more like files.
 
 Quickstart
 ----------
