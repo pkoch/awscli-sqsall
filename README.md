@@ -38,7 +38,7 @@ pip install awscli-sqsall
 aws configure set plugins.sqsall sqsall
 ```
 
-Releasing
----------
+Developing
+----------
 
-It happes on tag. Check the GitHub Actions.
+See [DEVELOPING.md](DEVELOPING.md).
