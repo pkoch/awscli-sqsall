@@ -1,0 +1,22 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel"
+]
+
+build-backend = "setuptools.build_meta"
+
+
+[tool.black]
+line-length = 88
+
+[tool.pylint.format]
+max-line-length = 88
+
+[tool.pylint."messages control"]
+disable = """
+    line-too-long,
+    missing-class-docstring,
+    missing-function-docstring,
+    missing-module-docstring,
+"""
