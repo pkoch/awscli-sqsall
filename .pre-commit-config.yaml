@@ -19,12 +19,12 @@ repos:
       - id: markdownlint
 
   - repo: https://github.com/psf/black
-    rev: 22.1.0
+    rev: 22.3.0
     hooks:
       - id: black
 
   - repo: https://github.com/PyCQA/pylint
-    rev: v2.13.2
+    rev: v2.13.4
     hooks:
       - id: pylint
         additional_dependencies:
