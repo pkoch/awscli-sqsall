@@ -1,10 +1,8 @@
-awscli-sqsall
-=============
+# awscli-sqsall
 
 awscli plugin to treat SQS queues more like files.
 
-Quickstart
-----------
+## Quickstart
 
 `receive-all-messages` dumps all messages to a files. `send-all-messages` sends
 all file lines as messages to a queue. FIFO queues are supported.
@@ -30,15 +28,13 @@ aws sqs receive-all-messages --queue my-dlq \
 
 Check the commands' help for more details.
 
-Installing
-----------
+## Installing
 
 ```bash
 pip install awscli-sqsall
 aws configure set plugins.sqsall sqsall
 ```
 
-Developing
-----------
+## Developing
 
 See [DEVELOPING.md](DEVELOPING.md).

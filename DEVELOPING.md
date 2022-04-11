@@ -1,8 +1,6 @@
-Developing
-==========
+# Developing
 
-Coding
-------
+## Coding
 
 I use VS Code to code this, with manual venvs.
 
@@ -15,8 +13,7 @@ pip install -U black pylint
 pre-commit install
 ```
 
-Releasing
----------
+## Releasing
 
 Done on [.github/workflows/publish.yml](.github/workflows/publish.yml). Don't
 forget to bump the version on [setup.cfg](setup.cfg).

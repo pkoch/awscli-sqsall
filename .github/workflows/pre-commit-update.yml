@@ -1,22 +1,22 @@
 name: Pre-commit auto-update
 
 on:
-    # every monday at midnight
-    schedule:
-        - cron: '0 0 * * 1'
+  # every monday at midnight
+  schedule:
+    - cron: "0 0 * * 1"
 
 jobs:
-    auto-update:
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v2
-            - uses: actions/setup-python@v2
-            - uses: browniebroke/pre-commit-autoupdate-action@main
-            - uses: peter-evans/create-pull-request@v3
-              with:
-                  token: ${{ secrets.GITHUB_TOKEN }}
-                  branch: update/pre-commit-hooks
-                  assignees: pkoch
-                  title: 🔄 Update pre-commit hooks
-                  commit-message: 'chore: update pre-commit hooks'
-                  body: This is a GitHub workflow (`.github/workflows/pre-commit-update.yml`) running periodically to update our pre-commit hooks' versions to their latest version.
+  auto-update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+      - uses: browniebroke/pre-commit-autoupdate-action@main
+      - uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: update/pre-commit-hooks
+          assignees: pkoch
+          title: 🔄 Update pre-commit hooks
+          commit-message: "chore: update pre-commit hooks"
+          body: This is a GitHub workflow (`.github/workflows/pre-commit-update.yml`) running periodically to update our pre-commit hooks' versions to their latest version.
