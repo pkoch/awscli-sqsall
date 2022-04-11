@@ -1,6 +1,6 @@
 import sys
-from textwrap import dedent
 from datetime import datetime
+from textwrap import dedent
 
 from awscli.customizations.commands import BasicCommand
 
