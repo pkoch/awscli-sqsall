@@ -1,12 +1,4 @@
 {
-  "[python]": {
-    "editor.rulers": [60, 88],
-    "editor.wordWrapColumn": 88
-  },
-  "[markdown]": {
-    "editor.rulers": [80],
-    "editor.wordWrapColumn": 80
-  },
   "python.linting.pylintEnabled": true,
   "python.linting.enabled": true
 }
