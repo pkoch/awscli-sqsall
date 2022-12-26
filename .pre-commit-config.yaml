@@ -30,7 +30,7 @@ repos:
       - id: prettier
 
   - repo: https://github.com/PyCQA/isort
-    rev: 5.10.1
+    rev: 5.11.4
     hooks:
       - id: isort
 
@@ -40,7 +40,7 @@ repos:
       - id: markdownlint
 
   - repo: https://github.com/psf/black
-    rev: 22.10.0
+    rev: 22.12.0
     hooks:
       - id: black
 
@@ -50,13 +50,13 @@ repos:
       - id: flake8
 
   - repo: https://github.com/PyCQA/pylint
-    rev: v2.15.6
+    rev: v2.15.9
     hooks:
       - id: pylint
         additional_dependencies:
           - awscli
 
   - repo: https://github.com/shellcheck-py/shellcheck-py
-    rev: v0.8.0.4
+    rev: v0.9.0.2
     hooks:
       - id: shellcheck
