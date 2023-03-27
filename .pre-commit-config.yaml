@@ -50,7 +50,7 @@ repos:
       - id: flake8
 
   - repo: https://github.com/PyCQA/pylint
-    rev: v2.17.0
+    rev: v2.17.1
     hooks:
       - id: pylint
         additional_dependencies:
