@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.4.0
+    rev: v4.5.0
     hooks:
       - id: check-ast
       - id: check-case-conflict
@@ -50,7 +50,7 @@ repos:
       - id: flake8
 
   - repo: https://github.com/PyCQA/pylint
-    rev: v3.0.0b0
+    rev: v3.0.1
     hooks:
       - id: pylint
         additional_dependencies:
