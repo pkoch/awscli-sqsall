@@ -2,6 +2,8 @@
 
 awscli plugin to treat SQS queues more like files.
 
+ARCHIVED: since awscli2 added [sqs start-message-move-task](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sqs/start-message-move-task.html), since that was the main use case for this plugin, I've stopped using it. Until an itch to scratch show up, I'm archiving this.
+
 ## Quickstart
 
 `receive-all-messages` dumps all messages to a files. `send-all-messages` sends
